@@ -17,6 +17,8 @@ struct CommandArgs {
     exclude: String,
     #[arg(short, long, default_value = "1")]
     threads: u8,
+    #[arg(short, long, default_value = ".")]
+    output: String,
 }
 
 #[tokio::main]
